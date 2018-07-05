@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="color_fab_bg">#33cc47</color>
+    <color name="color_input_bg">#e9e9e9</color>
+
+    <color name="color_black">#000000</color>
+    <color name="color_red">#d9263d</color>
+    <color name="color_green">#1b972e</color>
+    <color name="color_blue">#2671d9</color>
+
+
+    <color name="color_selected_img">#c3c3dc</color>
+
+    <color name="color_MainActivity_bg">#dcebff</color>
+    <color name="color_button_bg">#28000000</color>
+    <color name="color_light_row">#c1d9fa</color>
+    <color name="color_dark_row">#b4cced</color>
+    <color name="color_selected_row">#e25f96c2</color>
+</resources>

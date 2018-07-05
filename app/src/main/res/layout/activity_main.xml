@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.gglabs.myapplication.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/lay_tb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_contacts"
+        android:layout_width="match_parent"
+        android:choiceMode="multipleChoice"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lay_tb" />
+
+    <!--<ListView
+        android:id="@+id/lay_listview"
+        android:layout_width="match_parent"
+        android:choiceMode="multipleChoice"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lay_tb" />-->
+
+    <TextView
+        android:id="@+id/tv_no_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="You don't have any contacts"
+        android:textSize="20sp" />
+
+</RelativeLayout>

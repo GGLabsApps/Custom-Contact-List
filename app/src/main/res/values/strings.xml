@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Adapters</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="contacts">Contacts</string>
+
+    <string name="add_contact_ems">8</string>
+
+    <string-array name="contact_options">
+        <item>Edit</item>
+        <item>Delete</item>
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="add">Add</string>
+    <string name="search">Search</string>
+    <string name="selected">Selected</string>
+</resources>

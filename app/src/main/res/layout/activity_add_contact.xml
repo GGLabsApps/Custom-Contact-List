@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gglabs.myapplication.ManageContactActivity">
+
+    <LinearLayout
+        android:layout_margin="@dimen/min_margin"
+        android:background="@color/color_input_bg"
+        android:id="@+id/lay_fields"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/min_margin"
+            android:text="@string/name"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_small" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:ems="@string/add_contact_ems"
+            android:hint="@string/name" />
+
+        <TextView
+            android:id="@+id/tv_item_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/min_margin"
+            android:text="@string/phone_number"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_small" />
+
+        <EditText
+            android:id="@+id/et_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="@string/add_contact_ems"
+            android:hint="0551234567"
+            android:inputType="phone" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/default_margin"
+        android:text="Ok" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="@dimen/default_margin"
+        android:text="Cancel" />
+
+    <RadioGroup
+        android:id="@+id/rg_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_ok"
+        android:layout_margin="@dimen/default_margin"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+            android:gravity="center_horizontal"
+            android:text="Red"
+            android:textColor="@color/color_red"
+            android:textSize="@dimen/font_size_small" />
+
+        <RadioButton
+            android:id="@+id/rb_green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+            android:gravity="center_horizontal"
+            android:text="Green"
+            android:textColor="@color/color_green"
+            android:textSize="@dimen/font_size_small" />
+
+        <RadioButton
+            android:id="@+id/rb_blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+            android:gravity="center_horizontal"
+            android:text="Blue"
+            android:textColor="@color/color_blue"
+            android:textSize="@dimen/font_size_small" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/lay_images"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rg_color"
+        android:layout_below="@id/lay_fields"
+        android:layout_margin="@dimen/min_margin">
+
+        <ImageView
+            android:id="@+id/iv_male"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/min_margin"
+            android:layout_weight="1"
+            android:src="@drawable/ic_male" />
+
+        <ImageView
+            android:id="@+id/iv_bird"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/min_margin"
+            android:layout_weight="1"
+            android:src="@drawable/ic_bird" />
+
+        <ImageView
+            android:id="@+id/iv_female"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/min_margin"
+            android:layout_weight="1"
+            android:src="@drawable/ic_female" />
+    </LinearLayout>
+
+</RelativeLayout>
